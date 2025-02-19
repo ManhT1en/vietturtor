@@ -1,0 +1,289 @@
+.custom-name {
+    color: #000;
+    font-size: 30px;
+    font-weight: 1000;
+}
+/* Phần thành tích */
+.achievement-title {
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.achievement-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+.achievement-item:last-child {
+    border-bottom: none;
+}
+.achievement-icon {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #000;
+}
+.achievement-content {
+    flex: 1;
+}
+.achievement-content:hover {
+    font-weight: bolder;
+    color: #000;
+}
+.achievement-date {
+    font-size: 12px;
+    color: #888;
+    white-space: nowrap;
+}
+
+/* Phần rv */
+.review-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+.review-item:last-child {
+    border-bottom: none;
+}
+.review-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.review-header {
+    font-weight: bold;
+    color: #4a90e2;
+}
+.review-date {
+    font-size: 12px;
+    color: #888;
+}
+.review-stars {
+    color: #ffa500;
+}
+.review-duration {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Vị trí các phần tử với màn hình mt bình thường */
+@media (min-width: 992px) {
+    .col-md-push-6 {
+        position: relative; /* Cần thiết để 'left' hoạt động */
+        left: 50%; /* Đẩy phần tử sang phải 50% của container */
+    }
+}
+@media (min-width: 992px) {
+    .col-md-pull-3 {
+        position: relative; /* Cần thiết để sử dụng thuộc tính 'right' */
+        right: 25%; /* Dịch phần tử sang trái bằng 25% chiều rộng khung chứa */
+    }
+}
+
+/* Phần profile */
+.profile-img {
+    border-radius: 5%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.overflow-container {
+    max-height: calc(
+        3.5 * 2.5rem
+    ); /* Giới hạn chiều cao container cho 2 dòng */
+    overflow: hidden; /* Ẩn phần tử vượt ra ngoài */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem; /* Khoảng cách giữa các phần tử */
+}
+.custom-tag {
+    position: relative;
+    color: white;
+    background-color: bisque;
+    padding: 15px 10px;
+    border-radius: 15px;
+    margin: 5px 5px;
+    background: url("https://i.pinimg.com/control2/736x/5b/d2/fa/5bd2fa5763174bbe9d0c799365ac6ce2.jpg")
+        center center no-repeat;
+    background-size: cover;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 0;
+    font-size: 13px;
+    font-weight: bolder;
+}
+.custom-tag::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Nền mờ */
+    border-radius: 15px; /* Phù hợp với khung của thẻ */
+    z-index: -1; /* Đặt overlay nằm bên dưới text */
+}
+.price {
+    font-size: 23px;
+    font-weight: bold;
+    color: #f15b5b;
+}
+.rating {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+.btn-custom {
+    background-color: #f15b5b;
+    color: #fff;
+}
+.btn-custom:hover {
+    background-color: #d14545;
+}
+.ready-txt {
+    color: #27ae60;
+    font-weight: 700;
+
+    font-size: 18px;
+}
+/* Phần sideBar */
+.star-checked {
+    color: #ff9948;
+}
+
+/* top gs */
+.widget {
+    margin: 20px 0;
+}
+
+.widget-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.tutor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Khoảng cách giữa các gia sư */
+}
+
+.tutor-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dotted #ddd; /* Đường chấm dưới mỗi item */
+    padding: 10px 0;
+}
+
+.tutor-avatar {
+    width: 30px; /* Kích thước ảnh đại diện nhỏ */
+    height: 30px;
+    border-radius: 50%; /* Bo tròn ảnh đại diện */
+    object-fit: cover;
+    margin-right: 10px; /* Khoảng cách giữa ảnh và tên */
+}
+
+.tutor-name {
+    flex-grow: 1;
+    font-size: 14px;
+    color: #333;
+}
+
+.tutor-score {
+    background-color: #e2e6ea;
+    color: #333;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+/* top gs */
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.subject-tag {
+    padding: 5px 10px;
+    border: 1px solid #ddd; /* Bo viền */
+    border-radius: 35px; /* Bo góc */
+    background-color: #f8f9fa; /* Màu nền */
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.subject-tag:hover {
+    background-color: #e2e6ea; /* Hiệu ứng khi hover */
+}
+
+/* Phần sideBar */
+.textOverflow1Line {
+    white-space: nowrap; /* Không cho phép xuống dòng */
+    overflow: hidden; /* Ẩn phần văn bản vượt quá */
+    text-overflow: ellipsis; /* Thêm dấu "..." ở cuối */
+    margin-bottom: 2px;
+}
+
+.textOverflowManyLines {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden; /* Ẩn phần văn bản vượt quá */
+    text-overflow: ellipsis; /* Thêm dấu "..." ở cuối */
+}
+.teacher-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* width: 100%; */
+
+    border: 1px solid #ddd; /* Viền bao quanh */
+    border-radius: 10px; /* Bo góc */
+    overflow: hidden; /* Ẩn nội dung tràn */
+    background-color: #f8f9fa; /* Màu nền */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.teacher-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-thumb:hover .descInfo {
+    display: flex;
+}
+
+.descInfo {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.doctor-thumb:hover .descInfo {
+    opacity: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.checkedteacher {
+    font-size: 1.5rem;
+    color: #4caf50;
+}
+
+.team-item .team-icon a {
+    transition: background-color 0.3s ease;
+}
+
+.team-item .team-icon a:hover {
+    background-color: #0062cc;
+}
