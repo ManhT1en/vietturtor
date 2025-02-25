@@ -119,7 +119,7 @@
                   src="https://i.pinimg.com/736x/27/59/85/2759857f7584e595195bd9079dbe61b8.jpg"
                   class="tutor-avatar"
                 />
-                <span class="tutor-name">Trần Nguyễn Khánh Lâm</span>
+                <span class="tutor-name">Trần Văn A</span>
                 <span class="tutor-score">2</span>
               </div>
               <div class="tutor-item">
@@ -127,7 +127,7 @@
                   src="https://i.pinimg.com/736x/ee/8f/bd/ee8fbd1d731637de6904438a1fcb3798.jpg"
                   class="tutor-avatar"
                 />
-                <span class="tutor-name">Nguyễn Đức Minh</span>
+                <span class="tutor-name">Nguyễn Đức B</span>
                 <span class="tutor-score">2</span>
               </div>
               <div class="tutor-item">
@@ -135,7 +135,7 @@
                   src="https://i.pinimg.com/736x/66/17/dd/6617dd06a096ceeb1bb0b676c9f98427.jpg"
                   class="tutor-avatar"
                 />
-                <span class="tutor-name">Nguyễn Trung Luân</span>
+                <span class="tutor-name">Nguyễn Trung C</span>
                 <span class="tutor-score">2</span>
               </div>
               <div class="tutor-item">
@@ -143,7 +143,7 @@
                   src="https://i.pinimg.com/236x/6a/65/0a/6a650a727b258752c02a8df6222ac52c.jpg"
                   class="tutor-avatar"
                 />
-                <span class="tutor-name">Nguyễn Trung Hiếu</span>
+                <span class="tutor-name">Nguyễn Thị D</span>
                 <span class="tutor-score">2</span>
               </div>
               <div class="tutor-item">
@@ -151,7 +151,7 @@
                   src="https://i.pinimg.com/236x/19/c6/ab/19c6aba9a6d235d695100f43385b0824.jpg"
                   class="tutor-avatar"
                 />
-                <span class="tutor-name">Phạm Đức Tùng</span>
+                <span class="tutor-name">Phạm Đức F</span>
                 <span class="tutor-score">2</span>
               </div>
               <!-- Thêm các mục tutor-item tương tự -->
